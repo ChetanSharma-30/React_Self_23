@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Closure In JS</title>
+  </head>
+  <body>
+    <h1>Closure IN JS</h1>
+    <p>
+      A closure is a feature of JavaScript that allows inner functions to access
+      the outer scope of a function.
+    </p>
+    <p>
+      A closure is the combination of a function bundled together (enclosed)
+      with references to its surrounding state (the lexical environment).
+    </p>
+    <p>
+      <b>lexical environment</b> => Lexical in general means in hierarchy or in
+      a sequence.
+    </p>
+    <p>
+      Whenever a new execution context(EC) is created a new lexical environment
+      is created and it is referenced in local EC in memory space
+    </p>
+    <p>
+      <strong
+        >Lexical Environment: Local Memory + Lexical Environment of its
+        Parent</strong
+      >
+    </p>
+
+    <script>
+      function outer() {
+        var a = "In The Outer Function";
+        function inner(params) {
+            var b = "In The Global Scope";
+            console.log(a);
+            function innerInner(params) {
+              console.log(b);
+            
+          }
+          innerInner()
+        }
+        inner();
+      }
+      outer();
+    </script>
+  </body>
+</html>

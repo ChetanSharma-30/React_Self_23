@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function</title>
+  </head>
+  <body>
+    <h1>Function</h1>
+    <p onclick="showMessage()">
+      Functions are the main “building blocks” of the program. They allow the
+      code to be called many times without repetition.
+    </p>
+    <h2>Syntax</h2>
+    <pre>
+        function name(parameter1, parameter2, ... parameterN) {
+            // body
+           }
+    </pre>
+
+    <h2>Local variables</h2>
+    <p>
+      A variable declared inside a function is only visible inside that
+      function.
+    </p>
+    <h2>Outer variables</h2>
+    <p>A function can access an outer variable as well, for example:</p>
+    <p>
+      The function has full access to the outer variable. It can modify it as
+      well.
+    </p>
+    <script>
+      //   function showMessage() {
+      //     alert("Hello everyone!");
+      //   }
+
+      //   showMessage()
+
+      //   function showMessage() {
+      //     let message = "Hello, I'm JavaScript!"; // local variable
+
+      //     alert(message);
+      //   }
+
+      //   showMessage(); // Hello, I'm JavaScript!
+
+      //   alert(message); // <-- Error! The variable is local to the function
+
+      //   let userName = "John";
+
+      //   function showMessage() {
+      //     let message = "Hello, " + userName;
+      //     alert(message);
+      //   }
+
+      //   showMessage(); // Hello, John
+
+    //   let userName = "John";
+
+    //   function showMessage() {
+    //     userName = "Bob"; // (1) changed the outer variable
+
+    //     let message = "Hello, " + userName;
+    //     alert(message);
+    //   }
+
+    //   alert(userName); // John before the function call
+
+    //   showMessage();
+
+    //   alert(userName); // Bob, the value was modified by the function
+    </script>
+  </body>
+</html>
