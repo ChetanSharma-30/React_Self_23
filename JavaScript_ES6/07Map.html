@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map</title>
+  </head>
+  <body>
+    <h2>Map</h2>
+    <p>
+      The map() function takes an array of values and applies a transformation
+      to each value in the array. It does not mutate the original array. It is
+      often used to transform an array of data into a new array with a different
+      structure.
+    </p>
+    <script>
+      const arr = [1, 2, 3, 4, 5];
+      const output = arr.map((num) => (num += 10));
+      console.log(arr); // [1, 2, 3, 4, 5]
+      console.log(output); // [11, 12, 13, 14, 15]
+    </script>
+  </body>
+</html>

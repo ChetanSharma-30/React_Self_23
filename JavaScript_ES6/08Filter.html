@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter</title>
+  </head>
+  <body>
+    <h2>Filter</h2>
+    <p>
+      The filter() function takes an array and returns a new array with only the
+      values that meet certain criteria. It also does not mutate the original
+      array. It is often used to select a subset of data from an array based on
+      certain criteria.
+    </p>
+    <script>
+      const arr = [1, 2, 3, 4, 5];
+      const output = arr.filter((num) => num % 2); // filter out odd numbers
+      console.log(arr); // [1, 2, 3, 4, 5]
+      console.log(output); // [1, 3, 5]
+    </script>
+  </body>
+</html>

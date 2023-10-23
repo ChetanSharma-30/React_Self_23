@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rest And Spread</title>
+  </head>
+  <body>
+    <h1>Rest And Spread</h1>
+    <p>
+      The main difference between rest and spread is that the rest operator puts
+      the rest of some specific user-supplied values into a JavaScript array.
+      But the spread syntax expands iterables into individual elements.
+    </p>
+    <script>
+        function addition(a,c, ...b) {
+          // console.log(a);
+          // console.log(b);
+          counter = 0
+          for (let index = 0; index < b.length; index++) {
+              counter += b[index]
+          }
+          // console.log(counter);
+          return a + counter;
+        }
+        console.log(addition(10, 20));
+        console.log(addition(10, 80));
+        console.log(addition(10, 80,80,50));
+  
+        const userData= ['UserNaem',"Password","Mobile"]
+        spreadexample(...userData)
+      //   spreadexample(userData[0],userData[1],userData[2])
+        function spreadexample(a,b,c) {
+          console.log(a,b,c);
+        }
+      </script>
+  </body>
+</html>

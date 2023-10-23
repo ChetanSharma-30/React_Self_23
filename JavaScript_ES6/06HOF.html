@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOF</title>
+  </head>
+  <body>
+    <h1>Higher Order Functions</h1>
+    <p>
+      A higher order function is a function that takes one or more functions as
+      arguments, or returns a function as its result.
+    </p>
+
+    <script>
+      // Callback function, passed as a parameter in the higher order function
+      function callbackFunction() {
+        console.log("I am  a callback function");
+      }
+
+      // higher order function
+      function higherOrderFunction(func) {
+        console.log("I am higher order function");
+        func();
+      }
+
+      higherOrderFunction(callbackFunction);
+    </script>
+  </body>
+</html>
