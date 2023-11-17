@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abstraction</title>
+  </head>
+  <body>
+    <h1>Abstraction</h1>
+    <p>
+      <b> Abstraction:</b> Abstraction means displaying only essential
+      information and hiding the details. Data abstraction refers to providing
+      only essential information about the data to the outside world, hiding the
+      background details or implementation.
+    </p>
+    <p>
+      Sometimes encapsulation refers to the hiding of data or data Abstraction
+      which means representing essential features hiding the background detail.
+      Most of the OOP languages provide access modifiers to restrict the scope
+      of a variable, but there are no such access modifiers in JavaScript, there
+      are certain ways by which we can restrict the scope of variables within
+      the Class/Object.
+    </p>
+    <pre>
+        
+
+            // Abstraction example
+            function person(fname, lname) {
+                let firstname = fname;
+                let lastname = lname;
+            
+                let getDetails_noaccess = function () {
+                    return (`First name is: ${firstname} Last 
+                        name is: ${lastname}`);
+                }
+            
+                this.getDetails_access = function () {
+                    return (`First name is: ${firstname}, Last 
+                        name is: ${lastname}`);
+                }
+            }
+            let person1 = new person('Mukul', 'Latiyan');
+            console.log(person1.firstname);
+            console.log(person1.getDetails_noaccess);
+            console.log(person1.getDetails_access());
+    </pre>
+    <p>
+      <b>Output:</b> In this example, we try to access some property(person1.firstname)
+      and functions(person1.getDetails_noaccess) but it returns undefined while
+      there is a method that we can access from the person
+      object(person1.getDetails_access()). By changing the way we define a
+      function we can restrict its scope.
+    </p>
+  </body>
+</html>

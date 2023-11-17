@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polymorphism</title>
+  </head>
+  <body>
+    <h1>Polymorphism</h1>
+    <p>
+      <b>Polymorphism:</b> Polymorphism is one of the core concepts of
+      object-oriented programming languages. Polymorphism means the same
+      function with different signatures is called many times. In real life, for
+      example, a boy at the same time may be a student, a class monitor, etc. So
+      a boy can perform different operations at the same time. Polymorphism can
+      be achieved by method overriding and method overloading
+    </p>
+    <pre>
+        
+
+            // Inheritance example
+            class person {
+                constructor(name) {
+                    this.name = name;
+                }
+                // method to return the string
+                toString() {
+                    return (`Name of person: ${this.name}`);
+                }
+            }
+            class student extends person {
+                constructor(name, id) {
+                    // super keyword for calling the above 
+                    // class constructor
+                    super(name);
+                    this.id = id;
+                }
+                toString() {
+                    return (`${super.toString()},
+                    Student ID: ${this.id}`);
+                }
+            }
+            let student1 = new student('Mukul', 22);
+            console.log(student1.toString());
+    </pre>
+    <p>
+      <b>Note:</b> The Person and Student objects both have the same method (i.e
+      toString()), this is called Method Overriding. <b>Method Overriding</b> allows a
+      method in a child class to have the same name(polymorphism) and method
+      signature as that of a parent class.
+    </p>
+    <p>
+      In the above code, the super keyword is used to refer to the immediate
+      parent class’s instance variable.
+    </p>
+  </body>
+</html>

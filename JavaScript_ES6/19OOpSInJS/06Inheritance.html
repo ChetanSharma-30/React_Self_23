@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ineheritance</title>
+  </head>
+  <body>
+    <h1>Inheritance</h1>
+    <p>
+      <b>Inheritance:</b> It is a concept in which some properties and methods
+      of an Object are being used by another Object. Unlike most of the OOP
+      languages where classes inherit classes, JavaScript Objects inherit
+      Objects i.e. certain features (property and methods) of one object can be
+      reused by other Objects.
+    </p>
+    <pre>
+        
+
+            // Inheritance example
+            class person {
+                constructor(name) {
+                    this.name = name;
+                }
+                // method to return the string
+                toString() {
+                    return (`Name of person: ${this.name}`);
+                }
+            }
+            class student extends person {
+                constructor(name, id) {
+                    // super keyword for calling the above 
+                    // class constructor
+                    super(name);
+                    this.id = id;
+                }
+                toString() {
+                    return (`${super.toString()},
+                    Student ID: ${this.id}`);
+                }
+            }
+            let student1 = new student('Mukul', 22);
+            console.log(student1.toString());
+    </pre>
+    <p>
+      <b>Output:</b> In this example, we define a Person Object with certain
+      properties and methods and then we inherit the Person Object in the
+      Student Object and use all the properties and methods of the person Object
+      as well as define certain properties and methods for the Student Object.
+    </p>
+  </body>
+</html>
