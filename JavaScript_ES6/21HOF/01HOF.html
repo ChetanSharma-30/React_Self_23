@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Higher Order Function</title>
+  </head>
+  <body>
+    <h1>Higher Order Function</h1>
+    <p>
+      A Function which takes another Function as an Argument or Returns a
+      Function from it is known as Higher Order Function.
+    </p>
+
+    <script>
+      // function x() {   // x is the callback function
+      //     console.log('Namaste Bharat');
+      // }
+
+      // function y(x) {   // This y takes x as an argument is Higher order function
+      //     x();
+      // }
+
+      const radius = [3, 1, 2, 4];
+
+    //   const calculateArea = function (radius) {
+    //     const output = [];
+    //     for (let i = 0; i < radius.length; i++) {
+    //       output.push(Math.PI * radius[i] * radius[i]);
+    //     }
+    //     return output;
+    //   };
+
+      const area = function (radius) {
+        return Math.PI * radius * radius;
+      };
+      const circumference = function (radius) {
+        return 2 * Math.PI * radius;
+      };
+      const diameter = function (radius) {
+        return 2 * radius;
+      };
+
+    //   const calculate = function (radius, logic) {
+    //     const output = [];
+    //     for (let i = 0; i < radius.length; i++) {
+    //       output.push(logic(radius[i]));
+    //     }
+    //     return output;
+    //   };
+
+
+
+
+    //   console.log(calculate(radius, area));
+    //   console.log(calculate(radius, circumference));
+    //   console.log(calculate(radius, diameter));
+
+
+
+    //   Reusable Code 
+    // Modularity 
+    // how to pass in function into different function
+
+
+   Array.prototype.calculate = function (logic) {
+        const output = [];
+        for (let i = 0; i < this.length; i++) {
+          output.push(logic(this[i]));
+        }
+        return output;
+      };
+
+    console.log(radius.map(area));
+    console.log(radius.calculate(area));
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String IN JS</title>
+  </head>
+  <body>
+    <script>
+      // 1. length: Property that returns the length of a string.
+
+      //   let str = "Hello, World!";
+      //   let length = str.length; // Output: 13
+
+      // 2. charAt() and charCodeAt(): Retrieve the character at a specified index and its
+      //    Unicode value, respectively.
+
+      //   let str = "Hello";
+      //   let charAtIndex2 = str.charAt(2); // Output: "l"
+      //   let unicodeValue = str.charCodeAt(0); // Output: 72 (Unicode value for "H")
+
+      // 3.substring() and substr(): Extracts a portion of a string.
+
+      //   let str = "Hello, World!";
+      //   let subStr1 = str.substring(7, 12); // Output: "World"
+      //   let subStr2 = str.substr(7, 5); // Output: "World"
+
+      // 4. slice(): Extracts a section of a string and returns it as a new string.
+
+      //   let str = "Hello, World!";
+      //   let slicedStr = str.slice(7); // Output: "World!"
+
+      // 5. indexOf() and lastIndexOf(): Find the index of a substring within a
+      //    string (first and last occurrence).
+
+      //   let str = "Hello, World!";
+      //   let index1 = str.indexOf("o"); // Output: 4
+      //   let index2 = str.lastIndexOf("o"); // Output: 8
+
+      // 6. toUpperCase() and toLowerCase(): Change the case of a string.
+
+      //   let str = "Hello, World!";
+      //   let upperCaseStr = str.toUpperCase(); // Output: "HELLO, WORLD!"
+      //   let lowerCaseStr = str.toLowerCase(); // Output: "hello, world!"
+
+      // 7. replace(): Replace a specified value with another value in a string.
+
+      //   let str = "Hello, World!";
+      //   let newStr = str.replace("World", "Universe"); // Output: "Hello, Universe!"
+
+      // 8. concat(): Concatenate two or more strings
+
+      //   let str1 = "Hello, ";
+      //   let str2 = "World!";
+      //   let combinedStr = str1.concat(str2); // Output: "Hello, World!"
+
+      // 9. trim(): Removes whitespace from both ends of a string.
+
+        let str = "   Hello,            World!   ";
+        // let trimmedStr = str.trim(); // Output: "Hello, World!"
+        // console.log(trimmedStr);
+        let newText = str.split(/[   ]+/);
+        console.log(newText.join(" "));
+        console.log(str);
+
+      // 10. split(): Splits a string into an array of substrings based on a specified separator
+
+      //   let str = "apple,banana,orange";
+      //   let fruits = str.split(","); // Output: ["apple", "banana", "orange"]
+    </script>
+  </body>
+</html>

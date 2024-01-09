@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBack In JS</title>
+</head>
+<body>
+    <h1>CallBack In JS</h1>
+
+    <button id="clickMe">Click Me</button>
+
+    <script>
+
+        // What is Callback function In JavaScript?
+
+        // We can take a function and pass it into another function, 
+        // that function which we are passing is Callback function.
+
+
+        // setTimeout(() => {
+        //     console.log("Namaste Bharat ");
+        // }, 5000);
+
+        // function a(b) {
+        //     console.log("a is called");
+        //     b()
+        // }
+        // a(function b() {
+        //     console.log("b is called");
+            
+        // })
+
+        // the b() function is callback function , which is passed into a() function
+
+        // if we want execute
+
+
+
+
+
+        // JavaScript is a Synchronous single-threaded language
+
+        // Blocking the main thread
+
+        // Power of Callback?
+
+        // Event Listenrs 
+
+        // document.getElementById("clickMe")
+        // .addEventListener("click", function greet() {
+        //     console.log("Namaste Bharat");
+        // })
+
+        // Deep about Event Listeners
+
+        // Closures demo with Event Listeners
+
+
+        // Closures for data hiding 
+
+
+        function attechEventListners() {
+            
+            let count = 0
+            document.getElementById("clickMe")
+            .addEventListener("click", function greet() {
+                console.log("Namaste Bharat", ++count);
+            })
+        }
+        attechEventListners()
+
+        // Scope demo with Event Listeners
+
+        // Garbage Collection & removeEventListeners
+
+
+
+
+     
+
+
+    </script>
+</body>
+</html>

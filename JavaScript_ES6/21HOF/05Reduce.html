@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reduce Method In HTML</title>
+  </head>
+  <body>
+    <h1>Reduce Method In HTML</h1>
+
+    <script>
+      const arr = [5, 1, 2, 3, 6];
+
+      // Finding sum
+
+      //   Writting code in mormal function
+
+      //   function findSum(arr) {
+      //     let sum = 0;
+      //     for (let i = 0; i < arr.length; i++) {
+      //       sum = sum + arr[i];
+      //     }
+      //     return sum;
+      //   }
+      //   console.log(findSum(arr));
+
+      //   Now we are writting reduce method
+
+      // acc = accumulator
+      // curr = current
+
+      //   const output = arr.reduce(function (acc, curr) {
+      //     acc = acc + curr;
+      //     return acc;
+      //   }, 0);
+
+      //   console.log(output);
+
+      // Finding maximum number
+
+    //   function findMax(arr) {
+    //     let max = 0;
+    //     for (let i = 0; i < arr.length; i++) {
+    //       if (arr[i] > max) {
+    //         max = arr[i];
+    //       }
+    //     }
+    //     return max;
+    //   }
+    //   console.log(findMax(arr));
+
+      //   Now we are writting reduce method
+
+      // acc = accumulator
+      // curr = current
+
+        const output = arr.reduce(function (max, curr) {
+            if (curr > max) {
+                max = curr
+            }
+          return acc;
+        }, 0);
+
+        console.log(output);
+    </script>
+  </body>
+</html>

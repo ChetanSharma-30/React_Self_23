@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promises in JS</title>
+  </head>
+  <body>
+    <h1>Promises in JS</h1>
+
+    <script>
+    //   const cart = ["Shoes", "kurta", "Shirt"];
+
+    //   createOrder(cart, function (orderId) {
+    //     proceedToPayment(orderId);
+    //   }); 
+
+    //   Issue with this kind of code is Inversion of Control 
+
+
+    // SO now we will see how we can solve this kind of problems with promises 
+
+
+    // const promise = createOrder(cart);
+
+    // promise is nothing just an empty object - empty object with some data value in it and
+    // that data value can hold whatever this createOrder api will return to us 
+
+
+
+    // promise.then(function (orderId) {
+    //     proceedToPayment(orderId);
+    //   });
+    
+
+    const Github_Api = 'https://api.github.com/users/ChetanSharmaTops'
+
+
+    const user = fetch(Github_Api)
+
+    console.log(user);
+
+
+
+    user.then(function (data) {
+        console.log(data);
+    })
+    // There are two tFypes of state in Promise 
+
+    // 1. State of a promise => it will tells us in which state the promise is, 
+        // initially the promise is in pending state , 
+        // and after the data fetch it will change the fullfilled state
+    // 2. Result  => Result will store whatever the data it will return 
+
+
+    // Note : Promise objects are immutable 
+    </script>
+  </body>
+</html>

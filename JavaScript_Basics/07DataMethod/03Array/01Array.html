@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array</title>
+  </head>
+  <body>
+    <script>
+        // 1. push(): Adds one or more elements to the end of an
+        //    array and returns the new length of the array.
+
+        // let arr = [1, 2, 3];
+        // arr.push(4, 5); // Output: arr is now [1, 2, 3, 4, 5]
+
+        // 2. pop(): Removes the last element from an array and returns that element.
+
+        // let arr = [1, 2, 3];
+        // let removedElement = arr.pop(); // Output: removedElement is 3, arr is now [1, 2]
+
+        // 3. shift(): Removes the first element from an array and returns that element.
+
+        // let arr = [1, 2, 3];
+        // let removedElement = arr.shift(); // Output: removedElement is 1, arr
+
+        // 4. unshift(): Adds one or more elements to the beginning of an array and returns the new length of the array.
+
+        // let arr = [2, 3];
+        // arr.unshift(0, 1); // Output: arr is now [0, 1, 2, 3]
+
+        // 5. slice(): Returns a shallow copy of a portion of an array into a new array.
+
+        // let arr = [1, 2, 3, 4, 5];
+        // let slicedArr = arr.slice(1, 4); // Output: slicedArr is [2, 3, 4]
+
+        // 6. splice(): Adds or removes elements from an array.
+
+        // let arr = [1, 2, 3, 4, 5];
+        // arr.splice(2, 1); // Output: arr is now [1, 2, 4, 5]
+
+        // 7. concat(): Combines two or more arrays and returns a new array.
+
+        // let arr1 = [1, 2];
+        // let arr2 = [3, 4];
+        // let combinedArr = arr1.concat(arr2); // Output: combinedArr is [1, 2, 3, 4]
+
+        // 8. indexOf() and lastIndexOf(): Returns the first or last index at which a given element can be found in the array, or -1 if it is not present.
+
+        // let arr = [1, 2, 3, 2, 4];
+        // let firstIndex = arr.indexOf(2); // Output: firstIndex is 1
+        // let lastIndex = arr.lastIndexOf(2); // Output: lastIndex is 3
+
+        // 9. forEach(): Executes a provided function once for each array element.
+
+        // let arr = [1, 2, 3];
+        // arr.forEach((element) => {
+        //     console.log(element); // Output: 1, 2, 3 (printed in order)
+        // });
+
+        // 10. map(): Creates a new array by performing a function on each array element.
+
+        // let arr = [1, 2, 3];
+        // let newArr = arr.map((element) => element * 2); // Output: newArr is [2, 4, 6]
+
+        // 11. filter(): Creates a new array with elements that pass a test specified by a provided function.
+
+        // let arr = [1, 2, 3, 4, 5];
+        // let filteredArr = arr.filter((element) => element > 2); // Output: filteredArr is [3, 4, 5]
+
+        // 12. reduce(): Executes a reducer function on each element of the array, resulting in a .
+        // single output value.
+
+        // let arr = [1, 2, 3, 4, 5];
+        // let sum = arr.reduce((accumulator, currentValue) => accumulator + currentValue); // Output: sum is 15
+
+        // 13.every(): Checks if all elements in an array pass a test specified by a provided function.
+
+        // let arr = [30, 40, 50];
+        // let allElementsGreaterThan20 = arr.every((element) => element > 20); // Output: true
+
+        // 14. some(): Checks if at least one element in the array passes a test specified by a provided function.
+
+        // let arr = [10, 20, 30];
+        // let someElementsGreaterThan25 = arr.some((element) => element > 25); // Output: true
+
+        // 15. find(): Returns the value of the first element in the array that satisfies the provided testing function.
+
+        // let arr = [10, 20, 30, 40, 50];
+        // let foundValue = arr.find((element) => element > 25); // Output: foundValue is 30
+
+        // 16. findIndex(): Returns the index of the first element in the array that satisfies the provided testing function.
+
+        // let arr = [10, 20, 30, 40, 50];
+        // let foundIndex = arr.findIndex((element) => element > 25); // Output: foundIndex is 2
+
+        // 17. sort(): Sorts the elements of an array in place and returns the sorted array.
+
+        // let arr = [3, 1, 4, 2, 5];
+        // arr.sort(); // Output: arr is now [1, 2, 3, 4, 5]
+
+        // 18. reverse(): Reverses the order of the elements in an array.
+
+        // let arr = [1, 2, 3, 4, 5];
+        // arr.reverse(); // Output: arr is now [5, 4, 3, 2, 1]
+
+        // 19. isArray(): Checks whether an object is an array.
+
+        // let arr = [1, 2, 3];
+        // let isArr = Array.isArray(arr); // Output: true
+
+        // 20. flat(): Creates a new array with all sub-array elements concatenated
+        // into it recursively up to the specified depth.
+
+        // let arr = [1, 2, [3, 4, [5, 6]]];
+        // let flattenedArr = arr.flat(2); // Output: flattenedArr is [1, 2, 3, 4, 5, 6]
+
+        // 21. flatMap(): Maps each element using a mapping function, then flattens
+        // the result into a new array.
+
+        // let arr = [1, 2, 3];
+        // let mappedArr = arr.flatMap((x) => [x * 2]); // Output: mappedArr is [2, 4, 6]
+
+        // 22. fill(): Fills elements of an array with a static value from the start
+        // index to the end index.
+
+        // let arr = [1, 2, 3, 4, 5];
+        // arr.fill(0, 2, 4); // Output: arr is now [1, 2, 0, 0, 5]
+
+        // 23. includes(): Determines whether an array includes a certain value among
+        // its entries.
+
+        // let arr = [1, 2, 3, 4, 5];
+        // let includesValue = arr.includes(3); // Output: includesValue is true
+
+        // 24. join(): Joins all elements of an array into a string.
+
+        // let arr = ['Hello', 'World', '!'];
+        // let joinedString = arr.join(' '); // Output: joinedString is "Hello World !"
+
+        // 25. keys(), values(), entries(): These methods return a new Array Iterator object that
+        // contains the keys, values, or key-value pairs (entries) for each index in the array.
+
+        // let arr = ['a', 'b', 'c'];
+        // let keys = arr.keys(); // Output: Iterator object with keys
+        // let values = arr.values(); // Output: Iterator object with values
+        // let entries = arr.entries(); // Output: Iterator object with key-value pairs
+
+        // 26. from(): Creates a new, shallow-copied array from an array-like or iterable object.
+
+        // let arrLike = 'hello';
+        // let copiedArr = Array.from(arrLike); // Output: copiedArr is ["h", "e", "l", "l", "o"]
+
+        // 27. reduceRight(): Executes a reducer function on each element of the array, resulting in a
+        // single output value, but traverses the array from right to left.
+
+        // let arr = [1, 2, 3, 4, 5];
+        // let sum = arr.reduceRight((accumulator, currentValue) => accumulator + currentValue); // Output: sum is 15
+    </script>
+  </body>
+</html>

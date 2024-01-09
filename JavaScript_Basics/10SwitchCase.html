@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch In JS</title>
+  </head>
+  <body>
+    <h1>Switch In JS</h1>
+    <p>A switch statement can replace multiple if check</p>
+    <p>
+      It gives a more descriptive way to compare a value with multiple variants.
+    </p>
+    <p><b>Syntax</b></p>
+    <pre>
+        switch(x) {
+            case 'value1':  // if (x === 'value1')
+              ...
+              [break]
+          
+            case 'value2':  // if (x === 'value2')
+              ...
+              [break]
+          
+            default:
+              ...
+              [break]
+          }
+    </pre>
+    <script>
+      var d = new Date();
+    
+      switch(d.getDay()) {
+          case 0:
+              alert("Today is Sunday.");
+              break;
+          case 1:
+              alert("Today is Monday.");
+              break;
+          case 2:
+              alert("Today is Tuesday.");
+              break;
+          case 3:
+              alert("Today is Wednesday.");
+              break;
+          case 4:
+              alert("Today is Thursday.");
+              break;
+          case 5:
+              alert("Today is Friday.");
+              break;
+          case 6:
+              alert("Today is Saturday.");
+              break;   
+          default:
+              alert("No information available for that day.");
+              break;
+      }
+  
+  
+  
+  
+  </script>
+  </body>
+</html>

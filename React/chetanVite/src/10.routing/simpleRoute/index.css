@@ -1,0 +1,17 @@
+ul li {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+}
+
+.active {
+  font-weight: bolder;
+  color: red;
+}
+
+.ul_link li:hover {
+  color: blue;
+  font-size: larger;
+}

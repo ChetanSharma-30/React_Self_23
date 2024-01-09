@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter Method In JS</title>
+  </head>
+  <body>
+    <h1>Filter Method In JS</h1>
+    <p>Filter Method is Used to filter values in an array.</p>
+
+    <script>
+      const arr = [5, 1, 2, 3, 6];
+
+      // filter odd values
+
+      //   function oddValue(x) {
+      //     return x % 2;
+      //   }
+
+      // filter even values
+
+      //   function evenValue(x) {
+      //     return x % 2 === 0;
+      //   }
+
+      // filter odd values
+
+      //   function greaterValue(x) {
+      //     return x > 2;
+      //   }
+
+      //   const output = arr.filter(oddValue);
+      //   const output = arr.filter(evenValue);
+      //   const output = arr.filter(greaterValue);
+
+      //   console.log(output);
+
+      // We can pass in function like this also i.e  what is higher order function
+
+      //   const output = arr.filter(function greaterValue(x) {
+      //     return x > 2;
+      //   });
+
+      //   console.log(output);
+
+      // Also in Arrow function
+
+    //   const output = arr.filter((x) => {
+    //     return x > 2;
+    //   });
+
+    //   console.log(output);
+
+
+    // As well 
+
+    const output = arr.filter((x) => x > 2);
+
+      console.log(output);
+    </script>
+  </body>
+</html>

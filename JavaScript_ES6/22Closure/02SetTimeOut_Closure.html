@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SetTimeOut With Closure</title>
+  </head>
+  <body>
+    <h1>SetTimeOut With Closure</h1>
+
+    <script>
+      // function x() {
+
+      //     var a = 10
+      //     setTimeout(function () {
+      //         console.log(a);
+
+      //     }, 2000)
+
+      //     console.log("Namaste Bharat");
+      // }
+      // x()
+
+      // JavaScript Never waits for someone
+
+      // so , we can say that Time and Tide And JavaScript Wait for none
+
+      // If We apply for loop in this ...See What happen ...
+
+      // In general it will work with let only because it has block scope and
+      //   every time a new memory allocation will happen but in var it will refer to same memory
+
+       function x() {
+        //  for (var a = 1; a <= 5; a++) {
+         for (let a = 1; a <= 5; a++) {
+           setTimeout(function () {
+             console.log(a);
+           }, a * 2000);
+         }
+         
+         console.log("Namaste Bharat");
+       }
+       x();
+
+      //  but if we want to do this with only var then we will
+      //  make a Closure in it which will remeber the lexical scope of its outer function
+
+      // function outer() {
+      //   for (var a = 1; a <= 5; a++) {
+      //     function inner(b) {
+      //       setTimeout(function () {
+      //         console.log(b);
+      //       }, b * 2000);
+      //     }
+      //     inner(a)
+      //   }
+
+      //   console.log("Namaste Bharat");
+      // }
+      // outer();
+    </script>
+  </body>
+</html>

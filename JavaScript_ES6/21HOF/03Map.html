@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map Method In JS</title>
+  </head>
+  <body>
+    <h1>Map Method In JS</h1>
+
+    <script>
+      const arr = [5, 1, 2, 3, 6];
+
+      //   If we want to transform it
+
+    //   Double = [10, 2, 4, 6, 12];
+    //   Triple = [15, 3, 6, 9, 18];
+    //   Binary = [101, 1, 10, 11, 110];
+
+
+    // function double(x) {
+    //     return x*2;
+    // }
+    // function triple(x) {
+    //     return x*3;
+    // }
+    // function binary(x) {
+    //     return x.toString(2);
+    // }
+
+    // const output = arr.map(double);
+    // const output = arr.map(triple);
+    // const output = arr.map(binary);
+    // console.log(output);
+
+
+
+    // We can pass in function like this also i.e  what is higher order function
+
+    // const output = arr.map( function binary(x) {
+    //     return x.toString(2);
+    // });
+
+    // console.log(output);
+
+
+    // In Arrow Function 
+
+    // const output = arr.map((x) => {
+    //     return x.toString(2);
+    // });
+
+    // console.log(output);
+
+
+    // Also we can do like this 
+
+    const output = arr.map((x) => x.toString(2));
+
+    console.log(output);
+
+
+    </script>
+  </body>
+</html>

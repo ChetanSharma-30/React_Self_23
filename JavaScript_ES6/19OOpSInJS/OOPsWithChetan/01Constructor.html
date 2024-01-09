@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor In JS</title>
+</head>
+<body>
+    <h1>Constructor In JS</h1>
+
+    <script>
+        function BankAccount(customerName, balance = 0) {
+            this.customerName = customerName;
+            this.accountNumber = Date.now();
+            this.balance = balance;
+            this.deposit = (amount) =>{
+                this.balance += amount;
+            }
+            this.withdraw = (amount) =>{
+                this.balance -= amount;
+            }
+
+        }
+
+        const chetanAccount = new BankAccount("Chetan", 2000)
+        const rameshAccount = new BankAccount("Ramesh", 5000)
+        
+        // chetanAccount.balance = 10000;
+
+        chetanAccount.deposit(5000)
+        chetanAccount.withdraw(1000)
+
+        console.log(chetanAccount, rameshAccount);
+    </script>
+</body>
+</html>

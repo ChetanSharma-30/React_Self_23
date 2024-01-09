@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check This Function</title>
+  </head>
+  <body>
+    <h1>Check This Function</h1>
+
+    <script>
+      //   greet();
+      //   a();   // It will considered as storing function in a variable.
+      //               so, remember the concept of Hoisting In JS
+
+      // Function Statement aka Function Declaration
+
+      function greet() {
+        console.log("Namaste Bharat");
+      }
+      greet();
+
+      // Function Expression
+
+      var a = function () {
+        console.log("a is called");
+      };
+      a();
+
+      // Anonymous Function
+
+      //   Anonymous Function does not have their own identity
+
+      // It will show =>  SyntaxError: Function statements require a function name
+      //  function () {
+
+      //  }
+
+      // Named Function Expression
+
+      // var b = function greetings() {
+      //   // console.log("Hello Greetings");
+      //   console.log(greetings);
+      // };
+      //   greetings();
+      // if we call it like this guess what happene ....????
+      // yes, it will show error => ReferenceError: greetings is not defined
+
+      //   You know why? => because greeting is not defined in outer scope or global scope but it is created as a local variable
+      // If we want to access greeting inside b function then only we can get this but not in outer or global side
+
+      // b();
+
+      // Difference Between Parameter And Arguments ?
+
+      //  Whatever we put it in (here) are identifier or labels are known as Parameter
+
+      // function add(para1, para2) {
+      //   let sum = para1 + para2;
+      //   console.log(sum);
+      // }
+
+      // add(arg1, arg2)  // when we call function we write arguments in (this)
+
+      // add(5, 4);
+
+      // First Class Functions
+
+      // we can pass function as an arguments inside another function
+
+      // The ability to use function as an value is known as First Class Functions
+
+
+      // var first = function (para1) {
+      //   // return function second() {
+      //   return function () {
+            
+      //   }
+      // }
+
+      // console.log(first());
+
+
+    //   So, we can say that functions are treated as first class function in JavaScript
+
+
+
+      // Arrow Functions
+
+
+      
+    </script>
+  </body>
+</html>

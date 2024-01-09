@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CallBack Hell in JS</title>
+  </head>
+  <body>
+    <h1>CallBack Hell in JS</h1>
+
+    <script>
+      // Callback hell => one callback inside another and another and another ......this is what callback hell is
+
+      // Create order
+      // Payement
+      // order summary
+      // update wallet
+
+
+    //   this type of code is unreadable and unmaintainable
+
+    // this type of structure of code is calles as Pyramid of Doom 
+
+      const cart = ["shoes", "pants", "kurta"];
+
+      api.createOrder(cart, function () {
+        api.proceedToPayment(function () {
+          api.showOrderSummary(function () {
+            api.updateWallet();
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

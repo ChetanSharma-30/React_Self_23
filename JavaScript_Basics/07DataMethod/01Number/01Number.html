@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Method IN JS</title>
+  </head>
+  <body>
+    <script>
+      // 1. toFixed(): This method converts a number into a string,
+      //      rounding to a specified number of decimals.
+
+      //   let num = 10.3456;
+      //   let roundedNum = num.toFixed(2); // Output: "10.35"
+
+      // 2. toPrecision(): Converts a number to a string, with a specified length.
+
+        let num = 12345.6789;
+        let preciseNum = num.toPrecision(7); // Output: "12345.7"
+        console.log(preciseNum);
+        console.log(preciseNum.length);
+
+      // 3. toString(): Converts a number to a string.
+
+      //   let num = 123;
+      //   let strNum = num.toString(); // Output: "123"
+
+      // 4. parseInt() and parseFloat(): Convert strings to integers and
+      //    floating-point numbers, respectively.
+
+      //   let strNum = "10";
+      //   let intNum = parseInt(strNum); // Output: 10
+
+      //   let floatNum = parseFloat("10.5"); // Output: 10.5
+
+      // 5. isNaN(): Checks if a value is NaN (Not-a-Number).
+
+      //   isNaN(10); // Output: false
+      //   isNaN("Hello"); // Output: true
+
+      // 6. isFinite(): Checks if a value is a finite number.
+
+      //   isFinite(123); // Output: true
+      //   isFinite(Infinity); // Output: false
+    </script>
+  </body>
+</html>
